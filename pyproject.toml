@@ -10,6 +10,9 @@ python = "^3.12"
 ujson = "^5.10.0"
 kafka-python-ng = "^2.2.2"
 python-dotenv = "^1.0.1"
+psutil = "^6.0.0"
+gputil = "^1.4.0"
+schedule = "^1.2.2"
 
 
 [build-system]

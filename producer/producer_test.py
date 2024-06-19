@@ -6,7 +6,7 @@ import config
 kafka_addr = f'{config.KAFKA_BROKER_ADDR}:{config.KAFKA_BROKER_PORT}'
 producer = KafkaProducer(
     acks='all',
-    #compression_type='gzip',
+    compression_type='gzip',
     bootstrap_servers=[kafka_addr],
     value_serializer=lambda x: ujson.dumps(x).encode('utf-8')
 )
